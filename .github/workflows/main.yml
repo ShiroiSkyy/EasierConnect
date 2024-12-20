@@ -12,6 +12,7 @@ on:
       - "go.sum"
       - ".github/workflows/*.yml"
 
+
 permissions: write-all
 
 jobs:
