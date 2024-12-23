@@ -92,6 +92,9 @@ jobs:
       - name: Get project dependencies
         run: go mod download
 
+      - name: Update dependencies
+        run: go get -u gvisor.dev/gvisor@latest && go mod tidy
+
       - name: Build
         run: |
           mkdir -p build_assets
