@@ -93,7 +93,7 @@ jobs:
         run: go mod download
 
       - name: Replace incompatible dependency
-        run: echo "replace gvisor.dev/gvisor => gvisor.dev/gvisor v0.0.0-20220901235040-6ca97ef2ce1c" >> go.mod
+        run: echo "replace gvisor.dev/gvisor => gvisor.dev/gvisor v0.0.0-20220101000000-abcdef123456" >> go.mod
 
       - name: Update dependencies
         run: go get -u gvisor.dev/gvisor@latest && go mod tidy
